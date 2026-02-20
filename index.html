@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForgeFit — Premium Fitness & Training</title>
+  <meta name="description" content="ForgeFit — Your ultimate fitness destination. Discover powerful workouts, target specific muscle groups, and transform your body with professional guidance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Forge<span class="accent">Fit</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#muscles" class="nav-link">Muscle Groups</a></li>
+        <li><a href="#exercises" class="nav-link">Exercises</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="cta-btn nav-cta" id="nav-cta-btn">Get Started</button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Professional Training Platform</span>
+      </div>
+      <h1 class="hero-title">
+        Forge Your <span class="gradient-text">Perfect</span><br/>
+        Body Today
+      </h1>
+      <p class="hero-subtitle">
+        Discover science-backed exercises targeting every muscle group. 
+        Build strength, burn fat, and unlock your peak performance with 
+        expert-curated workout programs.
+      </p>
+      <div class="hero-actions">
+        <a href="#exercises" class="btn btn-primary" id="hero-explore-btn">
+          <span>Explore Workouts</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#programs" class="btn btn-outline" id="hero-programs-btn">View Programs</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Exercises</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="12">0</span><span class="stat-suffix"></span>
+          <span class="stat-label">Muscle Groups</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="10">0</span><span class="stat-suffix">K+</span>
+          <span class="stat-label">Members</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="body-diagram-wrap">
+        <div class="body-card">
+          <div class="body-silhouette">
+            <div class="muscle-hotspot" style="top:12%;left:44%" data-muscle="Shoulders">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Shoulders</div>
+            </div>
+            <div class="muscle-hotspot" style="top:20%;left:30%" data-muscle="Chest">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Chest</div>
+            </div>
+            <div class="muscle-hotspot" style="top:20%;left:62%" data-muscle="Back">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Back</div>
+            </div>
+            <div class="muscle-hotspot" style="top:26%;left:18%" data-muscle="Biceps">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Biceps</div>
+            </div>
+            <div class="muscle-hotspot" style="top:26%;left:74%" data-muscle="Triceps">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Triceps</div>
+            </div>
+            <div class="muscle-hotspot" style="top:38%;left:44%" data-muscle="Core">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Core</div>
+            </div>
+            <div class="muscle-hotspot" style="top:54%;left:36%" data-muscle="Glutes">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Glutes</div>
+            </div>
+            <div class="muscle-hotspot" style="top:65%;left:44%" data-muscle="Quads">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Quads</div>
+            </div>
+            <div class="muscle-hotspot" style="top:78%;left:44%" data-muscle="Calves">
+              <div class="hotspot-dot"></div>
+              <div class="hotspot-label">Calves</div>
+            </div>
+            <!-- SVG Body -->
+            <svg class="body-svg" viewBox="0 0 200 420" xmlns="http://www.w3.org/2000/svg">
+              <!-- Head -->
+              <circle cx="100" cy="40" r="28" fill="#1e2a3a" stroke="#ff6b35" stroke-width="1.5"/>
+              <!-- Neck -->
+              <rect x="90" y="65" width="20" height="18" rx="4" fill="#1e2a3a"/>
+              <!-- Torso -->
+              <path d="M55 83 Q45 90 42 140 Q40 175 50 195 Q65 210 100 212 Q135 210 150 195 Q160 175 158 140 Q155 90 145 83 Z" fill="#1e2a3a" stroke="#ff6b35" stroke-width="1.2"/>
+              <!-- Chest divider -->
+              <line x1="100" y1="90" x2="100" y2="150" stroke="#ff6b35" stroke-width="0.8" stroke-dasharray="3,4" opacity="0.5"/>
+              <!-- Abs lines -->
+              <line x1="80" y1="155" x2="120" y2="155" stroke="#ff6b35" stroke-width="0.8" opacity="0.4"/>
+              <line x1="78" y1="170" x2="122" y2="170" stroke="#ff6b35" stroke-width="0.8" opacity="0.4"/>
+              <line x1="100" y1="148" x2="100" y2="195" stroke="#ff6b35" stroke-width="0.8" stroke-dasharray="3,4" opacity="0.4"/>
+              <!-- Left Arm -->
+              <path d="M55 83 Q38 95 32 135 Q28 165 34 185 Q40 205 50 210 Q58 200 60 180 Q62 155 65 130 Q68 105 70 90 Z" fill="#1e2a3a" stroke="#ff6b35" stroke-width="1.2"/>
+              <!-- Right Arm -->
+              <path d="M145 83 Q162 95 168 135 Q172 165 166 185 Q160 205 150 210 Q142 200 140 180 Q138 155 135 130 Q132 105 130 90 Z" fill="#1e2a3a" stroke="#ff6b35" stroke-width="1.2"/>
+              <!-- Left Forearm -->
+              <path d="M34 185 Q28 210 30 235 Q32 250 40 255 Q50 258 54 245 Q58 230 58 210 Q55 205 50 210 Z" fill="#1e2a3a" stroke="#4ecdc4" stroke-width="1"/>
+              <!-- Right Forearm -->
+              <path d="M166 185 Q172 210 170 235 Q168 250 160 255 Q150 258 146 245 Q142 230 142 210 Q145 205 150 210 Z" fill="#1e2a3a" stroke="#4ecdc4" stroke-width="1"/>
+              <!-- Hips/Pelvis -->
+              <path d="M50 195 Q52 225 58 240 Q80 250 100 252 Q120 250 142 240 Q148 225 150 195 Q135 210 100 212 Q65 210 50 195 Z" fill="#1e2a3a" stroke="#ff6b35" stroke-width="1"/>
+              <!-- Left Thigh -->
+              <path d="M58 240 Q50 270 52 310 Q54 340 62 360 Q74 370 82 360 Q90 340 88 310 Q86 275 84 248 Q72 250 58 240 Z" fill="#1e2a3a" stroke="#ff6b35" stroke-width="1.2"/>
+              <!-- Right Thigh -->
+              <path d="M142 240 Q150 270 148 310 Q146 340 138 360 Q126 370 118 360 Q110 340 112 310 Q114 275 116 248 Q128 250 142 240 Z" fill="#1e2a3a" stroke="#ff6b35" stroke-width="1.2"/>
+              <!-- Left Calf -->
+              <path d="M62 360 Q56 385 60 405 Q66 418 76 418 Q86 418 88 405 Q90 385 82 360 Z" fill="#1e2a3a" stroke="#4ecdc4" stroke-width="1"/>
+              <!-- Right Calf -->
+              <path d="M138 360 Q144 385 140 405 Q134 418 124 418 Q114 418 112 405 Q110 385 118 360 Z" fill="#1e2a3a" stroke="#4ecdc4" stroke-width="1"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll to Explore</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- ===== MUSCLE GROUPS SECTION ===== -->
+  <section class="section muscles-section" id="muscles">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Target Training</span>
+        <h2 class="section-title">Train by <span class="gradient-text">Muscle Group</span></h2>
+        <p class="section-subtitle">Select your target muscle group and discover the most effective exercises to maximize growth and strength.</p>
+      </div>
+      <div class="muscle-filter-tabs" id="muscle-filter-tabs">
+        <button class="filter-tab active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-tab" data-filter="chest" id="filter-chest">Chest</button>
+        <button class="filter-tab" data-filter="back" id="filter-back">Back</button>
+        <button class="filter-tab" data-filter="shoulders" id="filter-shoulders">Shoulders</button>
+        <button class="filter-tab" data-filter="biceps" id="filter-biceps">Biceps</button>
+        <button class="filter-tab" data-filter="triceps" id="filter-triceps">Triceps</button>
+        <button class="filter-tab" data-filter="core" id="filter-core">Core</button>
+        <button class="filter-tab" data-filter="legs" id="filter-legs">Legs</button>
+        <button class="filter-tab" data-filter="glutes" id="filter-glutes">Glutes</button>
+        <button class="filter-tab" data-filter="cardio" id="filter-cardio">Cardio</button>
+      </div>
+      <div class="muscle-cards-grid" id="muscle-cards-grid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXERCISES SECTION ===== -->
+  <section class="section exercises-section" id="exercises">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Exercise Library</span>
+        <h2 class="section-title">Effective <span class="gradient-text">Exercises</span></h2>
+        <p class="section-subtitle">Browse our curated library of science-backed exercises with detailed instructions and target muscle information.</p>
+      </div>
+      <div class="search-bar-wrap">
+        <input class="search-bar" type="text" id="exercise-search" placeholder="🔍  Search exercises..." autocomplete="off" />
+      </div>
+      <div class="exercises-grid" id="exercises-grid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS SECTION ===== -->
+  <section class="section programs-section" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Training Programs</span>
+        <h2 class="section-title">Choose Your <span class="gradient-text">Program</span></h2>
+        <p class="section-subtitle">Structured training programs designed by fitness experts to help you achieve your specific goals.</p>
+      </div>
+      <div class="programs-grid" id="programs-grid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIPS SECTION ===== -->
+  <section class="tips-section" id="tips">
+    <div class="container">
+      <div class="tips-header">
+        <span class="section-tag">Pro Tips</span>
+        <h2 class="section-title" style="color:#fff">Expert <span class="gradient-text">Fitness Tips</span></h2>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card" id="tip-1">
+          <div class="tip-icon">💧</div>
+          <h3>Stay Hydrated</h3>
+          <p>Drink at least 8–10 glasses of water daily. Proper hydration boosts performance by up to 25% and aids muscle recovery.</p>
+        </div>
+        <div class="tip-card" id="tip-2">
+          <div class="tip-icon">🥩</div>
+          <h3>Protein Intake</h3>
+          <p>Consume 1.6–2.2g of protein per kg of bodyweight. Protein is essential for muscle repair and growth after intense workouts.</p>
+        </div>
+        <div class="tip-card" id="tip-3">
+          <div class="tip-icon">😴</div>
+          <h3>Prioritize Recovery</h3>
+          <p>Muscles grow during rest, not during training. Aim for 7–9 hours of sleep to maximize muscle protein synthesis.</p>
+        </div>
+        <div class="tip-card" id="tip-4">
+          <div class="tip-icon">📈</div>
+          <h3>Progressive Overload</h3>
+          <p>Gradually increase weight, reps, or sets over time. This is the #1 principle for continual strength and muscle gains.</p>
+        </div>
+        <div class="tip-card" id="tip-5">
+          <div class="tip-icon">🧘</div>
+          <h3>Warm Up Properly</h3>
+          <p>Spend 5–10 minutes warming up before every session. This reduces injury risk and improves overall workout performance.</p>
+        </div>
+        <div class="tip-card" id="tip-6">
+          <div class="tip-icon">🎯</div>
+          <h3>Mind-Muscle Connection</h3>
+          <p>Focus on contracting the target muscle during each rep. Studies show this increases muscle activation by up to 22%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Start Your <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">Ready to transform your body? Reach out and our fitness experts will create a personalized plan for you.</p>
+      </div>
+      <div class="contact-wrap">
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full Name</label>
+              <input type="text" id="cf-name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-goal">Your Fitness Goal</label>
+            <select id="cf-goal">
+              <option value="">Select your goal...</option>
+              <option value="muscle">Build Muscle</option>
+              <option value="fat">Lose Fat</option>
+              <option value="strength">Increase Strength</option>
+              <option value="endurance">Improve Endurance</option>
+              <option value="flexibility">Enhance Flexibility</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-msg">Message</label>
+            <textarea id="cf-msg" rows="4" placeholder="Tell us about your fitness journey..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn" id="contact-submit-btn">
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="form-success" id="form-success">✅ Message sent! We'll get back to you within 24 hours.</div>
+        </form>
+        <div class="contact-info">
+          <div class="info-card" id="info-location">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>123 Fitness Avenue, Gym District, NY 10001</p>
+            </div>
+          </div>
+          <div class="info-card" id="info-phone">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (800) FIT-FORGE</p>
+            </div>
+          </div>
+          <div class="info-card" id="info-email">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@forgefit.com</p>
+            </div>
+          </div>
+          <div class="info-card" id="info-hours">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon–Fri: 5AM–10PM<br/>Sat–Sun: 6AM–8PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">Forge<span class="accent">Fit</span></span>
+          </a>
+          <p>Your ultimate fitness destination. Science-backed training for real results. Forge the best version of yourself.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" id="social-instagram" aria-label="Instagram">📸</a>
+            <a href="#" class="social-btn" id="social-youtube" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-btn" id="social-twitter" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-btn" id="social-facebook" aria-label="Facebook">📘</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Workouts</h4>
+            <ul>
+              <li><a href="#exercises">All Exercises</a></li>
+              <li><a href="#muscles">Muscle Groups</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#tips">Expert Tips</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Trainers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ForgeFit. All rights reserved. Built with ❤️ for fitness enthusiasts.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== EXERCISE MODAL ===== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="exercise-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
